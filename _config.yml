@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: ""
+baseurl: "/blog"
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -20,29 +20,29 @@ timezone:
 
 title: yuanguangshan # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: A text-focused blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://yuanguangshan.github.io/blog/"
 
 github:
-  username: github_username # change to your github username
+  username: yuanguangshan # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: yuangs # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: yuanguangshan
+  email: yuanguangshan@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://twitter.com/yuangs # change to your twitter homepage
+    - https://github.com/yuanguangshan # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
