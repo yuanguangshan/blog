@@ -1,6 +1,5 @@
 ---
 title: Unleash Your Potential
-author: yuangs
 date: 2023-08-08 11:33:00 +0800
 mermaid: true
 categories: [poem]
