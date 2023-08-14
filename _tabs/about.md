@@ -4,5 +4,19 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+当生活的道路坎坷不平，
+当困难的阴云笼罩心间，
+不要退缩，不要放弃，
+因为你有无限的力量。
+
+你是一颗闪烁的星辰，
+拥有无边的潜能和可能。
+在黑暗的夜晚，你是光明，
+照亮前行的路途，给人希望。
+
+不要畏惧失败的阴影，
+它只是成功的前奏曲。
+每一次跌倒，都是一次机会，
+重新站起来，展翅高飞。
+
+--yuanguangshan
