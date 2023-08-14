@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>echarts中国地图示例</title>
+<!-- 引入 echarts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script>
+      <!-- 引入中国地图数据 -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 800px;height:600px;"></div>
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('main'));
+
+// 指定图表的配置项和数据
+var option = {
+title: {
+text: '中国各省份碱性化工企业产能分布',
+subtext: '数据来源：网络',
+left: 'center'
+},
+tooltip: {
+trigger: 'item',
+formatter: function (params) {
+return params.name + '<br/>' + params.value[2] + '万吨/年<br/>' + params.value[3];
+}
+},
+visualMap: {
+min: 0,
+max: 350,
+left: 'left',
+top: 'bottom',
+text: ['高','低'],           // 文本，默认为数值文本
+calculable: true,
+inRange: {
+color: ['#e0ffff', '#006edd']
+}
+},
+series: [
+{
+name: '企业产能',
+type: 'map',
+mapType: 'china',
+roam: false,
+label: {
+normal: {
+show: true
+},
+emphasis: {
+show: true
+}
+},
+data:[
+{name:'河南',value:[113.65,34.76,460,'联碱法：金山化工（330）、安棚碱矿（130）']},
+{name:'山东',value:[117,36.65,450,'氨碱法：海化集团（300）、山东海天（150）']},
+{name:'河北',value:[114.48,38.03,230,'氨碱法：唐山三友（230）']},
+{name:'新疆',value:[87.68,43.77,150,'氨碱法：昆仑碱业（150）']},
+{name:'江苏',value:[118.78,32.04,250,'氨碱法：连云港碱（130）、实联化工（120）']},
+{name:'四川',value:[104.06,30.67,120,'联碱法：和邦生物（120）']},
+{name:'青海',value:[101.74,36.56,350,'氨碱法：盐湖镁业（120）、青海发投（120）、五彩碱矿（110）']},
+{name:'湖北',value:[114.31,30.52,110,'氨碱法：双环科技（110）']}
+]
+}
+]
+};
+
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+</body>
+</html>
