@@ -3,7 +3,7 @@ title: Unleash Your Potential
 author: cotes
 date: 2023-08-08 11:33:00 +0800
 mermaid: true
-tags:Youth
+tags: [youth]
 ---
 
 In the realm of endless possibilities,
