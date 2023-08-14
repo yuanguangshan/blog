@@ -1,9 +1,9 @@
 ---
 title: Unleash Your Potential
-author: cotes
+author: yuangs
 date: 2023-08-08 11:33:00 +0800
 mermaid: true
-categories: [Blogging, poem]
+categories: [poem]
 tags: [youth]
 ---
 
