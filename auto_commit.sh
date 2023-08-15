@@ -12,5 +12,5 @@ if [[ -n $(git status -s) ]]; then
   git commit -m "Auto commit"
 
   # 推送到远程仓库
-  git push remote git@github.com:yuanguangshan/blog.git
+  git push
 fi
