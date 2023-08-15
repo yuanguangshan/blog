@@ -2,7 +2,8 @@
 
 cd /Users/hhh/blog/blog/
 
-
+git config --global user.email yuanguangshan@gmail.com
+git config --global user.name "yuanguangshan"
 # 添加所有修改的文件到暂存区
 git add .
 
