@@ -39,7 +39,7 @@ git_status=$(git status --porcelain)
 if [[ -n $git_status ]]; then
     # 有文件变更，执行Git指令
     git add .
-    git commit -m "add a blog @ $(date)"
+    git commit -m "add a blog @ $(date +'%Y-%m-%d')"
     git_push_status=$(git push)
 
     # 检查Git push状态
