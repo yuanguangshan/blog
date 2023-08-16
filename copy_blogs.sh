@@ -16,4 +16,22 @@ for file in "$source_dir"/*; do
     fi
 done
 
+# 检查是否有文件变更
+git_status=$(git status --porcelain)
+if [[ -n $git_status ]]; then
+    # 有文件变更，执行Git指令
+    git add .
+    git commit -m "add a blog"
+    git_push_status=$(git push)
+
+    # 检查Git push状态
+    if [[ $? -eq 0 ]]; then
+        echo "Git push 成功"
+    else
+        echo "Git push 失败"
+    fi
+else
+    echo "没有文件变更"
+fi
+
 
