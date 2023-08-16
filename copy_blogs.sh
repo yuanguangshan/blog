@@ -1,13 +1,25 @@
 #!/bin/bash
 
-#if at worksource_dir="/Users/hhh/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
+
+#判断环境
+
+if [ -d "/Users/yuangs/gitblog/blog" ]; then
+  # 如果路径 a 存在，则执行代码段 b
+echo "执行工作环境代码"
+  # 在这里添加代码段 b 的具体内容
+source_dir="/Users/hhh/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"
+destination_dir="/Users/hhh/myblog/gitblog/_posts"
+
 #destination_dir="/Users/hhh/myblog/gitblog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
-
-
-#if at home
+else
+  # 如果路径 a 不存在，则执行代码段 c
+echo "执行家庭环境代码"
+  # 在这里添加代码段 c 的具体内容
 source_dir="/Users/yuangs/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
 destination_dir="/Users/yuangs/gitblog/blog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
+fi
 
+#自动拷贝blog文章，并检查有变化，自动git提交
 
 # 检查a文件夹中的每个文件
 for file in "$source_dir"/*; do
