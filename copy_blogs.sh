@@ -1,7 +1,13 @@
 #!/bin/bash
 
-source_dir="/Users/hhh/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
-destination_dir="/Users/hhh/myblog/gitblog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
+#if at worksource_dir="/Users/hhh/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
+#destination_dir="/Users/hhh/myblog/gitblog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
+
+
+#if at home
+source_dir="/Users/yuangs/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
+destination_dir="/Users/yuangs/gitblog/blog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
+
 
 # 检查a文件夹中的每个文件
 for file in "$source_dir"/*; do
@@ -33,5 +39,3 @@ if [[ -n $git_status ]]; then
 else
     echo "没有文件变更"
 fi
-
-
