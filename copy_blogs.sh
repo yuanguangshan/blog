@@ -3,7 +3,7 @@
 
 #判断环境
 
-if [ -d "/Users/yuangs/gitblog/blog" ]; then
+if [ -d "/Users/hhh" ]; then
   # 如果路径 a 存在，则执行代码段 b
 echo "执行work代码中……"
   # 在这里添加代码段 b 的具体内容
