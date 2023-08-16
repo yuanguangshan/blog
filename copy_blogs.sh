@@ -5,7 +5,7 @@
 
 if [ -d "/Users/yuangs/gitblog/blog" ]; then
   # 如果路径 a 存在，则执行代码段 b
-echo "执行工作环境代码"
+echo "执行代码中……"
   # 在这里添加代码段 b 的具体内容
 source_dir="/Users/hhh/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"
 destination_dir="/Users/hhh/myblog/gitblog/_posts"
@@ -13,7 +13,7 @@ destination_dir="/Users/hhh/myblog/gitblog/_posts"
 #destination_dir="/Users/hhh/myblog/gitblog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
 else
   # 如果路径 a 不存在，则执行代码段 c
-echo "执行家庭环境代码"
+echo "执行代码中……"
   # 在这里添加代码段 c 的具体内容
 source_dir="/Users/yuangs/Library/Mobile Documents/iCloud~app~cyan~taio/Documents/Editor"  # 将 "/path/to/a" 替换为实际的a文件夹路径
 destination_dir="/Users/yuangs/gitblog/blog/_posts"  # 将 "/path/to/b" 替换为实际的b文件夹路径
