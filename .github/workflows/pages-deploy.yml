@@ -39,8 +39,16 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v2
+      #- name: Setup Ruby
+       # uses: ruby/setup-ruby@v2
+
+        - name: Install Ruby 3.0
+        run: |
+      
+        sudo apt update
+        sudo apt install -y ruby-full
+        ruby --version
+
         with:
           ruby-version: 3   # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
