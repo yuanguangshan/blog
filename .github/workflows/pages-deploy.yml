@@ -1,3 +1,38 @@
+name: 检查
+
+on:
+  push:
+    branches:
+      - main  # replace with your branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3  # replace with your Ruby version
+
+    - name: Clear Bundler cache
+      run: |
+        bundle config --local deployment 'true'
+        bundle config --local without 'development test'
+        bundle clean --force
+
+    - name: Update Bundler
+      run: gem update --system
+
+    - name: Install dependencies
+      run: bundle install
+
+    # Add other steps as needed
+
+
 name: "Build and Deploy"
 on:
   push:
